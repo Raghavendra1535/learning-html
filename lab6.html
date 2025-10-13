@@ -66,19 +66,19 @@
             <button onclick="appendToDisplay('4')">4</button> 
             <button onclick="appendToDisplay('5')">5</button> 
             <button onclick="appendToDisplay('6')">6</button> 
-            <button class="operator" onclick="setOperation('-')">&minus;</button> 
+            <button class="operator" onclick="appendToDisplay('-'),setOperation('-')">&minus;</button> 
             <button onclick="appendToDisplay('1')">1</button> 
             <button onclick="appendToDisplay('2')">2</button> 
             <button onclick="appendToDisplay('3')">3</button> 
-            <button class="operator" onclick="setOperation('*')">&times;</button> 
+            <button class="operator" onclick="appendToDisplay('x'),setOperation('*')">&times;</button> 
             <button onclick="appendToDisplay('0')">0</button> 
             <button onclick="appendToDisplay('.')">.</button> 
-            <button class="operator" onclick="setOperation('/')">&divide;</button> 
+            <button class="operator" onclick="appendToDisplay('/'),setOperation('/')">&divide;</button> 
             <button class="operator" onclick="calculate()">&equals;</button> 
-            <button class="operator" onclick="setOperation('%')">%</button> 
-            <button class="operator" onclick="setOperation('^')">x<sup>y</sup></button> 
+            <button class="operator" onclick="appendToDisplay('%'),setOperation('%')">%</button> 
+            <button class="operator" onclick="appendToDisplay('^'),setOperation('^')">x<sup>y</sup></button> 
             <button class="operator" onclick="squareRoot()">√</button> 
-            <button class="operator" onclick="square()">x<sup>2</sup></button> 
+            <button class="operator" onclick="appendToDisplay('<sup>2</sup>'),square()">x<sup>2</sup></button> 
             <button onclick="clearDisplay()">C</button> 
         </div> 
     </div> 
