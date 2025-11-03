@@ -98,12 +98,11 @@
 				const jsonInput = document.getElementById('jsonDateInput').value; 
 				const jsObject = JSON.parse(jsonInput); 
 				const date = new Date(jsObject.date); 
+				document.getElementById('result').innerText = 'Converted Date: ' + date.toString(); 
 			} catch (error) { 
 				document.getElementById('result').innerText = 'Error: ' + error.message; 
 			} 
-		} 
-		document.getElementById('result').innerText = 'Converted Date: ' +date.toString(); 
-		document.getElementById('result').innerText = 'Error: ' + error.message; 
+		} 		
 		function convertJsonToCsv() { 
 			try { 
 			const jsonInput = document.getElementById('dataInput').value; 
